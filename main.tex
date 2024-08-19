@@ -8,12 +8,23 @@
 %%\addbibresource{main.bib}
 
 \title{The Sebayt Of Ptahhotep}
-\author{Ptahhotep, Sem Essessi, others...} 
+\author{Ptahhotep, Sem Essessi, others...\\forward by <someone>} 
 \date{\today}
 
 \begin{document}
 
 \maketitle
+
+%beautiful title page goes here
+
+%\chapter*{Dedication}
+\vspace*{\fill}
+\begin{center}
+For my father Ptah, who is South of His wall...\\
+\vspace{15mm}
+... and for Mut the mother of all of my mothers.
+\end{center}
+\vspace*{\fill}
 
 \tableofcontents
 
@@ -22,6 +33,14 @@
 
 \input{forward.tex}
 
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
 
+\input{preface.tex}
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\input{introduction.tex}
 
 \end{document}
