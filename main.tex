@@ -11,6 +11,8 @@
 \author{Ptahhotep, Sem Essessi, others...\\Foreward by <someone>} 
 \date{\today}
 
+\makeindex[columns=2, title=Index, options= -s main.ist, intoc]
+
 \begin{document}
 
 \maketitle
@@ -22,11 +24,11 @@ BEAUTIFUL TITLE PAGE HERE
 %\chapter*{Dedication}
 \vspace*{\fill}
 \begin{center}
-For my father Ptah, who is South of His wall...\\
+For my father \sname{Ptah}, who is South of His wall...\\
 \vspace{7.5mm}
-... and for Mut the mother of all of my mothers.\\
+... and for \sname{Mut} the mother of all of my mothers.\\
 \vspace{15mm}
-May Seshat and Thoth be satisfied.\\
+May \sname{Seshat} and \sname{Thoth} be satisfied.\\
 \end{center}
 \vspace*{\fill}
 
@@ -55,5 +57,9 @@ May Seshat and Thoth be satisfied.\\
 \addcontentsline{toc}{chapter}{Introduction}
 \input{introduction.tex}
 %\markboth{}{}
+
+\pagebreak
+
+\printindex
 
 \end{document}
