@@ -1,4 +1,4 @@
-\documentclass[a4paper,pagesize,8pt,pointlessnumbers,normalheadings]{book}
+\documentclass[a4paper,pagesize,8pt,pointlessnumbers,normalheadings,oneside]{book}
 
 % this contains a bunch of niceties learned from other projects.
 % they may not all be relevant
@@ -16,6 +16,8 @@
 \maketitle
 
 %beautiful title page goes here
+BEAUTIFUL TITLE PAGE HERE
+\pagebreak
 
 %\chapter*{Dedication}
 \vspace*{\fill}
@@ -32,13 +34,13 @@ May Seshat and Thoth be satisfied.\\
 
 \markboth{}{}
 
-%for tables to fill width.
-%\newlength\q
-%\setlength\q{\dimexpr .25\textwidth -2\tabcolsep}
+%to help tables to fill width.
+\newlength\q
+\setlength\q{\dimexpr .25\textwidth -2\tabcolsep}
 
-\chapter*{Foreward}
-\markboth{Foreward}{Foreward}
-\addcontentsline{toc}{chapter}{Foreward}
+\chapter*{Foreword}
+\markboth{Foreword}{Foreword}
+\addcontentsline{toc}{chapter}{Foreword}
 \input{forward.tex}
 \markboth{}{}
 

@@ -19,6 +19,7 @@
 \usepackage{parskip} %% no font indent, newlines
 \usepackage[cm]{sfmath}
 \usepackage{siunitx}
+\usepackage{tabularx}
 \usepackage{thmtools}
 \usepackage{titlesec}
 \usepackage{verbatim}
@@ -106,3 +107,6 @@
 %% main layout and title etc.
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
 \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+%% better space filling column for table
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
