@@ -7,7 +7,6 @@
 *.bbl
 *.idx
 *.synctex.gz
-*.pdf
 *.toc
 *.ind
 *.ilg
