@@ -1,4 +1,4 @@
-\documentclass[a4paper,pagesize,8pt,pointlessnumbers,normalheadings,oneside]{book}
+\documentclass[a4paper,pagesize,8pt,pointlessnumbers,normalheadings]{book}
 
 % this contains a bunch of niceties learned from other projects.
 % they may not all be relevant
@@ -21,6 +21,10 @@
 
 \maketitle
 
+\clearpage
+\vspace*{\fill}
+\clearpage
+
 %beautiful title page goes here
 \vspace*{\fill}
 \begin{center}
@@ -28,6 +32,10 @@
 \end{center}
 \vspace*{\fill}
 \pagebreak
+
+\clearpage
+\vspace*{\fill}
+\clearpage
 
 %\chapter*{Dedication}
 \vspace*{\fill}
@@ -60,9 +68,13 @@ May \nname{Seshat} and \nname{Thoth} be satisfied.\\
 \input{preface.tex}
 \markboth{}{}
 
-\chapter*{Introduction}
-\markboth{Introduction}{Introduction}
-\addcontentsline{toc}{chapter}{Introduction}
+\chapter*{Interlinear Translation}
+\vspace*{\fill}
+\pagebreak
+\addcontentsline{toc}{chapter}{Interlinear Translation}
+\section*{Introduction}
+\markboth{Interlinear Translation}{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 \input{introduction.tex}
 %\markboth{}{}
 
