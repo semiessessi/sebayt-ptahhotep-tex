@@ -1,4 +1,5 @@
 %% packages
+%\usepackage[utf8]{inputenc} % must come early.
 \usepackage[chapter]{algorithm}
 \usepackage{algorithmicx}
 \usepackage{algpseudocode}
@@ -7,13 +8,14 @@
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{courier} %% sets font for tt family only
 \usepackage{float}
-%\usepackage{fontspec}
+\usepackage{fontspec}
 \usepackage{epigraph}
 \usepackage{glossaries}
 \usepackage{graphicx}
 \usepackage{imakeidx}
 \usepackage{listings}
 \usepackage{longtable}
+\usepackage{newunicodechar}
 \usepackage{nicematrix}
 \usepackage{ntheorem}
 \usepackage{parskip} %% no font indent, newlines
@@ -30,6 +32,19 @@
 \usepackage{tgadventor}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \usepackage[LGR,T1]{fontenc}
+
+\newfontfamily\egyptologyfont{Doulos SIL}[Scale=MatchUppercase]
+\newcommand\eayin{{\egyptologyfont\symbol{"A725}}}
+\newcommand\ealeph{{\egyptologyfont\symbol{"A723}}}
+
+\newunicodechar{^^^^a723}{\ealeph} % aleph
+\newunicodechar{^^^^a725}{\eayin} % ayin
+\newunicodechar{^^^^1e0f}{\b{d}} % dj
+\newunicodechar{^^^^a7bd}{\`{i}} % yod
+\newunicodechar{^^^^1e6f}{\b{t}} % tch
+\newunicodechar{^^^^1e2b}{\b{h}} % x
+\newunicodechar{^^^^1e96}{\U{h}} % X
+\newunicodechar{^^^^1e24}{\b{h}} % H
 
 %\setmathrm{Arial}
 %\setmathsf{Arial}
@@ -113,6 +128,8 @@
 %% main layout and title etc.
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
 \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+%\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 
 %% better space filling column for table
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
