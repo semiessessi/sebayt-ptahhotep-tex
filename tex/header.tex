@@ -37,6 +37,11 @@
 \newcommand\eayin{{\egyptologyfont\symbol{"A725}}}
 \newcommand\ealeph{{\egyptologyfont\symbol{"A723}}}
 
+\makeatletter
+\newcommand*\U[1]{\oalign{#1\crcr\hidewidth\ltx@sh@ft{-3ex}%
+	\vbox to .2ex{\hbox{\u{}}\vss}\hidewidth}}
+\makeatother
+
 \newunicodechar{^^^^a723}{\ealeph} % aleph
 \newunicodechar{^^^^a725}{\eayin} % ayin
 \newunicodechar{^^^^1e0f}{\b{d}} % dj
@@ -44,7 +49,7 @@
 \newunicodechar{^^^^1e6f}{\b{t}} % tch
 \newunicodechar{^^^^1e2b}{\b{h}} % x
 \newunicodechar{^^^^1e96}{\U{h}} % X
-\newunicodechar{^^^^1e24}{\b{h}} % H
+\newunicodechar{^^^^1e25}{\d{h}} % H
 
 %\setmathrm{Arial}
 %\setmathsf{Arial}
@@ -129,6 +134,7 @@
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
 \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 
+%this screws up the interlinears
 %\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 
 %% better space filling column for table
